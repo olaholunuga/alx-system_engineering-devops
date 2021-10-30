@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# stop 4-to_infinity_and_beyond process by kill
+KPID=$(pidof 4-to_infinity_and_beyond)
+kill "$KPID"
