@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # prints I am invincible when it receives a SIGTERM
-trap 'echo "I am invicible!!!" ' TERM
+trap 'echo "I am invicible!!!"' SIGTERM
 
 while :
 do
