@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# to say hi on the 9th iteration of the loop from 1..10
+n=1
+while [ $n -le 10 ]
+do
+        echo "Best School"
+        if [ $n -eq 9 ]
+        then
+                echo "Hi"
+        fi
+        n=$((n+1))
+done
