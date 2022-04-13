@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Python script that, using this RE/her TODO list progress.
+"""Python script that, using this RE/her TODO list progress
 """
 
 import requests
@@ -16,8 +15,7 @@ if __name__ == "__main__":
                 "{}/users/{}".format(API, str(user_id))).json()
         user_todos = requests.get(
                 "{}/todos".format(API)).json()
-        todos = list(filter(lambda x: x.get("userId") == user_id,
-                user_todos))
+        todos = list(filter(lambda x: x.get("userId") == user_id,  user_todos))
         todos_done = list(filter(lambda x: x.get("completed"), todos))
         user_name = user_request.get("name")
         print(
