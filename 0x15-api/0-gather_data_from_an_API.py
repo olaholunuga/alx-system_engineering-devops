@@ -17,7 +17,7 @@ if __name__ == "__main__":
         user_todos = requests.get(
                 "{}/todos".format(API)).json()
         todos = list(filter(lambda x: x.get("userId") == user_id,
-            user_todos))
+                user_todos))
         todos_done = list(filter(lambda x: x.get("completed"), todos))
         user_name = user_request.get("name")
         print(
