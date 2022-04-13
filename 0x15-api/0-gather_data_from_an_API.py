@@ -18,7 +18,8 @@ if __name__ == "__main__":
         todos = list(filter(lambda x: x.get("userId") == user_id,  user_todos))
         todos_done = list(filter(lambda x: x.get("completed"), todos))
         user_name = user_request.get("name")
-        print("Employee {} is done with tasks({}/{}):".format(
+        print(
+                "Employee {} is done with tasks({}/{}):".format(
                     user_name,
                     len(todos_done),
                     len(todos)
